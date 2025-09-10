@@ -2,7 +2,7 @@
 
 ## Raspberry Pi - Initialisation
 
-Ce dépôt contient un script shell pour configurer rapidement un Raspberry Pi à destination d'étudiants en BUT Informatique.
+Ce dépôt contient un script shell pour configurer rapidement un Raspberry Pi.
 
 ## Objectifs
 - Créer un utilisateur `etu` avec mot de passe prédéfini
@@ -45,11 +45,3 @@ chmod +x setup_utilisateur.sh
 ```bash
 ./check_postinstall.sh
 ```
-
-### Astuce
-
-Vous pouvez copier ce dépôt sur une clé USB ou une carte SD pour une utilisation hors ligne.
-
-### Auteur
-
-Projet pédagogique proposé par \[K.B. / github.com/boudjelaba].
