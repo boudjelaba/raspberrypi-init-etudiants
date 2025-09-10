@@ -18,7 +18,6 @@ Ce dépôt contient un script shell pour configurer rapidement un Raspberry Pi �
 | `setup_utilisateur.sh`   | Script principal de configuration                |
 | `check_postinstall.sh`   | Script de vérification post-installation         |
 | `instructions.txt`       | Étapes à suivre pour exécuter le script          |
-| `docs/`                  | (optionnel) Ressources complémentaires           |
 
 ## Instructions rapides
 
