@@ -1,0 +1,70 @@
+===============================
+Configuration Raspberry Pi
+===============================
+
+📁 Fichier à utiliser :
+setup_utilisateur.sh
+
+Objectif :
+Configurer votre Raspberry Pi avec :
+- Un utilisateur nommé "etu"
+- Un mot de passe simple : btsciel2025
+- Les droits administrateur (sudo)
+- L’accès SSH activé
+- Suppression éventuelle d’anciens comptes
+
+---
+
+Étapes à suivre :
+
+1. Brancher un écran et un clavier sur le Raspberry Pi.
+2. Démarrer normalement.
+3. Connectez-vous avec un compte existant (par exemple : pi / raspberry), ou attendez l’interface graphique.
+4. Insérez la clé USB ou accédez au fichier via github.com/boudjelaba.
+5. Ouvrez un terminal (`Ctrl + Alt + T` ou via le menu).
+
+6. Rendez le script exécutable :
+
+```bash
+chmod +x setup_utilisateur.sh
+````
+
+7. Lancez le script :
+
+```bash
+./setup_utilisateur.sh
+```
+
+8. Répondez aux questions :
+
+   * Créez le compte `etu`
+   * Acceptez ou refusez de supprimer les anciens comptes
+
+---
+
+Informations de connexion :
+
+* **Nom d'utilisateur :** `etu`
+* **Mot de passe :** `btsciel2025`
+* **Connexion SSH :**
+
+  * Via IP locale : `ssh etu@192.168.x.x`
+  * Ou avec le nom du Pi : `ssh etu@raspberrypi.local` (si configuré)
+
+---
+
+En cas de problème :
+
+* Vérifiez que le clavier est en AZERTY (Menu > Préférences > Raspberry Pi Configuration > Localisation)
+* Essayez le mot de passe en QWERTY si besoin
+* L’utilisateur `pi` peut être supprimé automatiquement si vous le demandez
+
+---
+
+# 2. `check_postinstall.sh` – script de vérification post-installation
+
+Ce script vérifie :
+- Si l’utilisateur `etu` existe
+- S’il est dans le groupe `sudo`
+- Si le mot de passe fonctionne
+- Si SSH est actif
